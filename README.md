@@ -1,6 +1,6 @@
 # Eduplatform_onboarding
 
-Group Project. Components for educational platform 👩‍🎓
+Group Project. Components for educational platform 📱
 
 ## Description
 <p>Components development for the student account on the educational platform (registration, learning process, achievements and completed lessons).</p>
@@ -14,5 +14,5 @@ Group Project. Components for educational platform 👩‍🎓
 - CSS3 (Flexbox, Grid)
 - Figma
 
-## Thanks to all Contributors, forked from ⬇️
-<a target="_blank" href="https://github.com/itgirlschool/eduplatform_onboarding">Forked repository</a>
+## Thanks to all contributors, forked from ⬇️
+<a target="_blank" href="https://github.com/itgirlschool/eduplatform_onboarding">eduplatform_onboarding</a>
