@@ -1,5 +1,5 @@
 @import "../style/global.css";
-@import "../../components/button/asserts/styles/button.css";
+@import "../../components/button/assets/styles/button.css";
 
 .progress-bar__container {
   max-width: 250px;

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
 @import "../styles/auth.css";
 @import "../styles/program.css";
-@import "../../../components/button/asserts/styles/button.css";
+@import "../../../components/button/assets/styles/button.css";
 @import "../styles/components.css";
 @import "../../../components/assets/styles/progress_bar.css";
 @import "../styles/load.css";

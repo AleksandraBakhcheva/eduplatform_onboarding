@@ -1,6 +1,6 @@
 @import url(https://necolas.github.io/normalize.css/latest/normalize.css);
 @import url(onboarding-1_main.css);
-@import url(../../../components/button/asserts/styles/button.css);
+@import url(../../../components/button/assets/styles/button.css);
 
 @media screen and (min-width: 769px) and (min-height: 601px) {
   .onb-main {
