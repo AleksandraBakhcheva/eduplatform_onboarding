@@ -1,0 +1,199 @@
+.card-program {
+  width: 268px;
+  min-height: 368px;
+  margin: 0 auto;
+  clip-path: polygon(
+    8% 0,
+    92% 0,
+    100% 8%,
+    100% 92%,
+    92% 100%,
+    8% 100%,
+    0 92%,
+    0 8%
+  );
+}
+
+.card-program_white {
+  border: 1px solid var(--white-color);
+  background: linear-gradient(
+      to right bottom,
+      rgb(255, 255, 255) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(
+      to left bottom,
+      rgb(255, 255, 255) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(
+      to right top,
+      rgb(255, 255, 255) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(
+      to left top,
+      rgb(255, 255, 255) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.342) 20%, rgba(255, 255, 255, 0) 50%),
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.151) 20%,
+      rgba(255, 255, 255, 0) 60%
+    );
+}
+
+.card-program__header {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.card-program__wrap-header {
+  width: 100%;
+  margin: 15px 0px;
+  border-image-slice: 1;
+}
+
+.card-program__avatar_white {
+  height: 201px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 24px 32px rgba(255, 255, 255, 0.04))
+    drop-shadow(0px 16px 24px rgba(255, 255, 255, 0.04))
+    drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.04))
+    drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.04));
+}
+
+.card-program__wrap-avatar {
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+.card-program__block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-program__wrap-block {
+  margin-bottom: 15px;
+}
+
+.card-program__item {
+  width: max-content;
+  padding: 2% 4%;
+  margin-top: 8px;
+  margin-right: 12px;
+  cursor: default;
+  backdrop-filter: blur(6px);
+  border-radius: 50px;
+  font-family: "SF-Pro-Display-Medium";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.card-program__item_white {
+  background: linear-gradient(
+    225deg,
+    rgba(146, 213, 241, 0.01) 0%,
+    rgba(146, 213, 241, 0.1) 100%
+  );
+  border: 0.5px solid var(--white-color);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.04),
+    0px 0px 2px rgba(255, 255, 255, 0.06), 0px 0px 1px rgba(255, 255, 255, 0.04);
+}
+
+.header-text {
+  padding-top: 6vh;
+  padding-bottom: 3vh;
+}
+
+.header-text__item1 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header-text__item2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.wrap-card {
+  padding-top: 4vh;
+}
+
+.wrap-radio {
+  padding-top: 3vh;
+  padding-bottom: 11vh;
+}
+
+.card-program__avatar_color {
+  width: 201px;
+  filter: drop-shadow(0px 24px 32px rgba(255, 255, 255, 0.04))
+    drop-shadow(0px 16px 24px rgba(255, 255, 255, 0.04))
+    drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.04))
+    drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.04));
+  border-radius: 50%;
+}
+
+.card-program_color {
+  border: 1px solid var(--blue-color);
+  background: linear-gradient(
+      to right bottom,
+      rgb(146, 213, 241) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(
+      to left bottom,
+      rgb(146, 213, 241) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(
+      to right top,
+      rgb(146, 213, 241) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(
+      to left top,
+      rgb(146, 213, 241) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    radial-gradient(
+      circle farthest-corner at bottom center,
+      rgba(146, 213, 241, 0) 0%,
+      rgba(146, 213, 241, 0.5) 100%
+    );
+}
+
+@media screen and (min-width: 770px) {
+  .card-program {
+    width: 77vw;
+    max-width: 350px;
+  }
+
+  .card-program__block {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card-program {
+    width: 90vw;
+  }
+
+  .wrap-radio {
+    padding-bottom: 3vh;
+  }
+}

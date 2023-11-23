@@ -1,0 +1,80 @@
+.glossy-button {
+  position: relative;
+  font-size: 1em;
+  font-family: Rubik, sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 1em 0;
+  width: 55vw;
+  max-width: 300px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: inset 0 3px 2px hsla(0, 0%, 100%, 0.308),
+    inset 0 -1px 2px hsla(0, 0%, 100%, 0.308), 0 1px 2px hsla(0, 0%, 0%, 0.414),
+    0 0 0 3px white;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.glossy-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  height: 55px;
+  width: 55px;
+  transform: scale(1.05);
+  background-image: url("../images/vector_drop.svg");
+}
+
+.glossy-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(48deg);
+  left: 93%;
+  top: 60%;
+  height: 17px;
+  width: 9.5px;
+  border-radius: 60%;
+  background: linear-gradient(
+    80grad,
+    hsla(0, 0%, 100%, 0.267),
+    hsla(0, 0%, 100%, 0.134)
+  );
+}
+
+.glossy-button--blue {
+  background: linear-gradient(
+    180deg,
+    #0ab6ef 0%,
+    #35c8f7 16.67%,
+    #07b9f1 43.23%,
+    #5589d6 94.27%,
+    #5d9cca 100%
+  );
+}
+
+.glossy-button--green {
+  background: linear-gradient(180deg, #ccef82 0%, #469a29 94.27%, #7cbc55 100%);
+}
+
+.glossy-button--red {
+  background: linear-gradient(
+    180deg,
+    #faa0a0 0%,
+    #f74135 16.67%,
+    #f33f33 43.23%,
+    #cc524a 94.27%,
+    #e16d6d 100%
+  );
+}
+
+.glossy-button:hover {
+  transform: scale(1.05);
+}
+
+.glossy-button_shine:hover {
+  box-shadow: 0 0 400px #89ff3f, 0 0 0 3px white;
+}

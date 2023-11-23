@@ -1,0 +1,102 @@
+.profession-title {
+  font-weight: 700;
+  font-size: 2.85vh;
+  padding-top: 6vh;
+  padding-bottom: 5vh;
+}
+
+.profession-text {
+  font-weight: 700;
+  font-size: 1.9vh;
+  padding-bottom: 3vh;
+}
+
+.profession-card {
+  min-height: 80%;
+  margin: 0 auto;
+  margin-bottom: 3vh;
+
+  border: 1px solid var(--blue-color);
+  clip-path: polygon(
+    8% 0,
+    92% 0,
+    100% 8%,
+    100% 92%,
+    92% 100%,
+    8% 100%,
+    0 92%,
+    0 8%
+  );
+
+  background: linear-gradient(
+      to right bottom,
+      rgb(146, 213, 241) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(
+      to left bottom,
+      rgb(146, 213, 241) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(
+      to right top,
+      rgb(146, 213, 241) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    linear-gradient(
+      to left top,
+      rgb(146, 213, 241) 4%,
+      rgba(255, 255, 255, 0) 4%
+    ),
+    radial-gradient(
+      circle farthest-corner at bottom center,
+      rgba(146, 213, 241, 0) 0%,
+      rgba(146, 213, 241, 0.5) 100%
+    );
+}
+
+.profession-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  min-height: 26vh;
+  max-height: 30vh;
+}
+
+.wrap-social {
+  padding-top: 4vh;
+  padding-bottom: 5vh;
+}
+
+.wrap-button {
+  margin-top: 3%;
+}
+
+.signup-form {
+  min-height: 38vh;
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .profession-card {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1279px) {
+  .profession-card {
+    width: 70%;
+  }
+
+  .signup-form {
+    min-height: 37vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .profession-card {
+    width: 50%;
+  }
+}

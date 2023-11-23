@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-text">
+      <p class="header-text__item1">Выбери свою</p>
+      <p class="header-text__item2">ПРОФЕССИЮ</p>
+    </div>
+
+    <form>
+      <select name="name_profession" id="profession1" class="profession-select">
+        <option value="Программирование">Программирование</option>
+        <option value="Мобильная разработка">Мобильная разработка</option>
+      </select>
+    </form>
+
+    <div class="wrap-card">
+      <div class="card-program card-program_color">
+        <div class="card-program__wrap-header">
+          <div class="card-program__header">
+            Frontend - разработчик
+          </div>
+        </div>
+
+        <div class="card-program__wrap-avatar">
+          <img class="card-program__avatar_color" src="assets/images/avatar-color.png" alt="фото" />
+        </div>
+
+        <div class="card-program__wrap-block">
+          <div class="card-program__block">
+            <div class="card-program__item card-program__item_white">&#35;HTML5</div>
+            <div class="card-program__item card-program__item_white">&#35;CSS3</div>
+            <div class="card-program__item card-program__item_white">&#35;Bootstrap</div>
+            <div class="card-program__item card-program__item_white">&#35;Figma</div>
+            <div class="card-program__item card-program__item_white">&#35;RESTAPI</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap-radio">
+      <div class="radio-block">
+        <label class="radio-block__item"><input class="radio-block_hide" type="radio" name="page" checked>
+          <span class="radio-block__custom radio-block__custom_blue"></span>
+        </label>
+        <label class="radio-block__item"><input class="radio-block_hide" type="radio" name="page">
+          <span class="radio-block__custom radio-block__custom_blue"></span>
+        </label>
+        <label class="radio-block__item"><input class="radio-block_hide" type="radio" name="page">
+          <span class="radio-block__custom radio-block__custom_blue"></span>
+        </label>
+      </div>
+    </div>
+
+    <form action="buy.html">
+      <button class="glossy-button glossy-button--green glossy-button_shine glossy-button-profession">Начать!</button>
+    </form>
+  </div>
+</body>
+
+</html>

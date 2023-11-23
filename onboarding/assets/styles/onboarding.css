@@ -1,0 +1,64 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+@import url(onboarding-1_main.css);
+@import url(../../../components/button/asserts/styles/button.css);
+
+@media screen and (min-width: 769px) and (min-height: 601px) {
+  .onb-main {
+    width: 31.125rem;
+    padding-top: 1rem;
+  }
+
+  .onb-main__cat_img {
+    width: 21.875rem;
+  }
+
+  .message {
+    margin-left: 13.4375rem;
+    margin-top: -14.375rem;
+  }
+
+  .message__text {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  #onb-main__btn {
+    width: 17.5rem;
+  }
+
+  .onb-main__topbar {
+    width: 31.125rem;
+    position: fixed;
+    margin-top: 650px;
+  }
+
+  .message_1 {
+    width: 17.5rem;
+    height: 14.6875rem;
+  }
+
+  .onb-main__arrow {
+    width: 15rem;
+    margin-right: 240px;
+  }
+
+  .onb-main__arrow_2 {
+    transform: rotate(-330deg);
+    margin-left: 1.25rem;
+  }
+
+  .message_2 {
+    width: 17.5rem;
+    height: 12rem;
+  }
+
+  .message_4 {
+    width: 17.5rem;
+    height: 12rem;
+  }
+
+  .onb-main__arrow_4 {
+    margin-left: 5rem;
+    margin-right: 12.5rem;
+  }
+}

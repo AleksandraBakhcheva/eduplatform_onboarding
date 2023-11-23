@@ -1,0 +1,46 @@
+.load {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.load-img {
+  margin-bottom: 5%;
+  animation: 20s linear infinite rotate;
+  max-width: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .load-img {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .load-img {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1279px) {
+  .load-img {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .load-img {
+    width: 400px;
+  }
+}

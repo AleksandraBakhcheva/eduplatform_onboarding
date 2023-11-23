@@ -1,0 +1,216 @@
+@import "../style/global.css";
+@import "../../components/button/asserts/styles/button.css";
+
+.progress-bar__container {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.container__progress-bar,
+.bar-width {
+  display: inline-flex;
+  max-width: 200px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.progress-bar__vector {
+  border-top: 3px solid transparent;
+  border-right: 100px solid #92d5f1;
+  border-bottom: 3px solid transparent;
+}
+
+.progress-bar__line {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 0.5px solid transparent;
+  border-left: 117px solid #92d5f1;
+  border-bottom: 0.5px solid transparent;
+  right: 30px;
+  bottom: 0px;
+  opacity: 80%;
+}
+
+.progress-bar__ellipse {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  right: 123px;
+  top: 1px;
+  background: #92d5f1;
+  box-shadow: 0 0 2px 1px #92d5f1, 0 0 10px 2px rgb(146 213 241 / 80%),
+    0 0 5px 5px rgb(255 255 255 / 50%);
+  cursor: pointer;
+}
+
+.profile1 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 15px 0;
+}
+
+.skillmeter {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+
+.skillmeter__skill {
+  display: flex;
+  align-items: center;
+  margin: 1vw;
+  gap: 16px;
+}
+
+.skillmeter__img img {
+  width: 40px;
+}
+
+.skillmeter__dicr {
+  align-content: center;
+  padding: 1vw;
+}
+
+.dicr__sum {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.dicr__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-blue:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.profilepic_img {
+  padding: 1vw;
+  margin: auto;
+}
+
+.arrowback_img,
+.setting_img {
+  margin: 1vw;
+}
+
+.arrowback-action img {
+  width: 40px;
+  height: 40px;
+}
+
+.profilepic_img img {
+  width: 180px;
+  height: 180px;
+}
+
+.setting_img {
+  width: 40px;
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 769px) {
+  body {
+    background-image: url("../../../profile/img/bg-desk-mob.jpg");
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1279px) {
+  body {
+    background-image: url("../../../profile/img/bg-desk.jpg");
+  }
+
+  .desk-adapt-block {
+    margin-bottom: 25px;
+  }
+
+  .desk-adapt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .dicr__sum {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .dicr__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn-blue-desk {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 25px;
+  }
+
+  .btn-blue {
+    margin: 0;
+  }
+
+  .btn-blue:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url("../../../profile/img/bg-desk.jpg");
+  }
+
+  .desk-adapt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dicr__sum {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .dicr__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .btn-blue-desk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn-blue {
+    margin-bottom: 25px;
+  }
+
+  .btn-blue:last-child {
+    margin-bottom: 15px;
+  }
+}

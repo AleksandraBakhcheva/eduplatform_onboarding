@@ -1,0 +1,52 @@
+:root {
+  --main-bg-color: #0f3570;
+  --blue-color: #92d5f1;
+  --social-color: #07b9f1;
+  --hover-color: #469a29;
+  --white-color: #ffffff;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Medium";
+  src: url("../fonts/SF-Pro-Display-Medium.otf");
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--white-color);
+  background-color: var(--main-bg-color);
+  background-image: url("../../../anketa/assets/images/background_mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 770px) and (max-width: 1279px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url("../../../anketa/assets/images/background_dekstop.png");
+  }
+
+  .container {
+    width: 60%;
+  }
+}
